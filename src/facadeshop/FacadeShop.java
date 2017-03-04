@@ -5,6 +5,8 @@
  */
 package facadeshop;
 
+import facadeshop.frame.JFRPrincipal;
+
 /**
  *
  * @author Jose Lopez Garcia
@@ -15,7 +17,8 @@ public class FacadeShop {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        JFRPrincipal menu = new JFRPrincipal();
+        menu.setVisible(true);
     }
     
 }
