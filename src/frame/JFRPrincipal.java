@@ -195,6 +195,9 @@ public final class JFRPrincipal extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
+        jSeparator22 = new javax.swing.JSeparator();
+        jSeparator23 = new javax.swing.JSeparator();
+        jSeparator24 = new javax.swing.JSeparator();
         jpnBuscarProducto = new javax.swing.JPanel();
         rbtnNombreProducto = new javax.swing.JRadioButton();
         rbtnCodBarraProducto = new javax.swing.JRadioButton();
@@ -812,6 +815,9 @@ public final class JFRPrincipal extends javax.swing.JFrame {
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel16.setText("Cantidad");
         jpnVentas.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, -1, -1));
+        jpnVentas.add(jSeparator22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 127, 60, -1));
+        jpnVentas.add(jSeparator23, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 127, 60, -1));
+        jpnVentas.add(jSeparator24, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 127, 40, 10));
 
         getContentPane().add(jpnVentas, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 730, 600));
 
@@ -825,44 +831,43 @@ public final class JFRPrincipal extends javax.swing.JFrame {
 
         lblSeleccionFiltro.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblSeleccionFiltro.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Seleccionar Filtro", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(102, 0, 0))); // NOI18N
-        jpnBuscarProducto.add(lblSeleccionFiltro, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 290, 160));
+        jpnBuscarProducto.add(lblSeleccionFiltro, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 290, 160));
 
         lblCodBarraFlitrosProductos.setText("Código de barra:");
-        jpnBuscarProducto.add(lblCodBarraFlitrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, -1, -1));
-        jpnBuscarProducto.add(txtCodBarraFiltroProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, 220, -1));
+        jpnBuscarProducto.add(lblCodBarraFlitrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, -1, -1));
+        jpnBuscarProducto.add(txtCodBarraFiltroProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 100, 220, -1));
 
         lblNombreFiltrosProductos.setText("Nombre:");
-        jpnBuscarProducto.add(lblNombreFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 180, -1, -1));
-        jpnBuscarProducto.add(txtNombreFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, 220, -1));
+        jpnBuscarProducto.add(lblNombreFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, -1, -1));
+        jpnBuscarProducto.add(txtNombreFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, 270, -1));
 
         lblCodBarraFiltroAlternativa.setText("Manera alternativa:");
-        jpnBuscarProducto.add(lblCodBarraFiltroAlternativa, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, -1, -1));
+        jpnBuscarProducto.add(lblCodBarraFiltroAlternativa, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 130, -1, 20));
 
         cmbCodBarraFiltrosProductos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jpnBuscarProducto.add(cmbCodBarraFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, 220, -1));
+        jpnBuscarProducto.add(cmbCodBarraFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 130, 220, -1));
 
         jLabel31.setText("Manera alternativa:");
-        jpnBuscarProducto.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 220, -1, -1));
+        jpnBuscarProducto.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 210, -1, -1));
 
         cmbNombreFiltrosProductos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jpnBuscarProducto.add(cmbNombreFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 220, 220, -1));
+        jpnBuscarProducto.add(cmbNombreFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 210, 220, -1));
 
         btnBuscarFiltrosProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/buscar.png"))); // NOI18N
         btnBuscarFiltrosProductos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jpnBuscarProducto.add(btnBuscarFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 260, 110, 30));
+        jpnBuscarProducto.add(btnBuscarFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 250, 110, 30));
 
         lblFiltrosProductos.setBackground(new java.awt.Color(102, 0, 0));
-        lblFiltrosProductos.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblFiltrosProductos.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Filtros", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(102, 0, 0))); // NOI18N
-        jpnBuscarProducto.add(lblFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, 380, 240));
+        jpnBuscarProducto.add(lblFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 380, 240));
 
         btnEditarFiltrosProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/modificar.png"))); // NOI18N
         btnEditarFiltrosProductos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jpnBuscarProducto.add(btnEditarFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 550, 110, 30));
+        jpnBuscarProducto.add(btnEditarFiltrosProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 550, 110, 30));
 
         btnEliminarFiltroProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/eliminar.png"))); // NOI18N
         btnEliminarFiltroProductos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jpnBuscarProducto.add(btnEliminarFiltroProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 550, 110, 30));
+        jpnBuscarProducto.add(btnEliminarFiltroProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 550, 110, 30));
 
         jtblBuscarFiltroProductos =new javax.swing.JTable(){
             public boolean isCellEditable(int rowIndex, int colIndex){
@@ -889,7 +894,7 @@ public final class JFRPrincipal extends javax.swing.JFrame {
         jtblBuscarFiltroProductos.getTableHeader().setReorderingAllowed(false);
         jScrollPane4.setViewportView(jtblBuscarFiltroProductos);
 
-        jpnBuscarProducto.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, 640, 200));
+        jpnBuscarProducto.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 640, 200));
 
         jPanel41.setBackground(new java.awt.Color(0, 0, 0));
         jPanel41.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -915,7 +920,7 @@ public final class JFRPrincipal extends javax.swing.JFrame {
                 btnSalirFiltroProductoActionPerformed(evt);
             }
         });
-        jpnBuscarProducto.add(btnSalirFiltroProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 550, 110, 30));
+        jpnBuscarProducto.add(btnSalirFiltroProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 550, 110, 30));
 
         getContentPane().add(jpnBuscarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 730, 600));
 
@@ -1497,6 +1502,9 @@ public final class JFRPrincipal extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator20;
     private javax.swing.JSeparator jSeparator21;
+    private javax.swing.JSeparator jSeparator22;
+    private javax.swing.JSeparator jSeparator23;
+    private javax.swing.JSeparator jSeparator24;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
